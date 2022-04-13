@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+
+* {
+  font-family: "Sora", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #e7f8f8;
+}
+
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.focused {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: rgb(255, 0, 68);
+  color: white;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #f9e506;
+  transition: ease-out 0.3s;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover,
+.btn:active {
+  box-shadow: inset 300px 0 0 0 #f9e506;
+  color: #000;
+}
+
+.btn--flat {
+  cursor: pointer;
+  font: inherit;
+  color: teal;
+  border: none;
+  background-color: none;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+.btn--flat:hover,
+.btn--flat:active {
+  background-color: teal;
+  color: white;
+}
+
+.btn-links {
+  text-decoration: none;
+  background-color: rgb(235, 195, 64);
+  color: white;
+  border-color: rgb(235, 195, 64);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 rgb(235, 195, 64);
+  transition: ease-out 0.3s;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+}
+
+.btn-links:hover,
+.btn-links:active {
+  box-shadow: inset 300px 0 0 0 #efd76e;
+  color: #000;
+}
