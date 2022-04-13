@@ -28,18 +28,18 @@ function App() {
       >
         <Switch>
           <Route path="/" exact>
-            <Redirect to="/about" />
+            <Redirect to="/Avi-info" />
           </Route>
-          <Route path="/about" exact>
+          <Route path="/Avi-info" exact>
             <About />
             <AllProjects />
           </Route>
           <Route path="/projects" exact>
             <AllProjects />
           </Route>
-          <Route path="/Avi-info">
+          {/* <Route path="/Avi-info">
             <Redirect to="/about" />
-          </Route>
+          </Route> */}
           {!authCtx.isLoggedIn && (
             <Route path="/auth">
               <AuthPage />
