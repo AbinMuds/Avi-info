@@ -37,6 +37,9 @@ function App() {
           <Route path="/projects" exact>
             <AllProjects />
           </Route>
+          <Route path="/Avi-info">
+            <Redirect to="/about" />
+          </Route>
           {!authCtx.isLoggedIn && (
             <Route path="/auth">
               <AuthPage />
