@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/305.3d1da853.chunk.css","mappings":"AAAA,8BACE,iBACF,CAEA,kCACE,SACF","sources":["components/projects/ProjectDetails.module.css"],"sourcesContent":[".detail {\n  text-align: center;\n}\n\n.detail img {\n  width: 60%;\n}\n"],"names":[],"sourceRoot":""}
