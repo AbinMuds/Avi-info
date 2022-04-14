@@ -1,4 +1,4 @@
-import { Fragment, useContext } from "react";
+import { Fragment } from "react";
 import FooterNavigation from "./FooterNavigation";
 import classes from "./Layout.module.css";
 import MainNavigation from "./MainNavigation";

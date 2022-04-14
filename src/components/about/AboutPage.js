@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import classes from "./AboutPage.module.css";
 import Container from "react-bootstrap/Container";
 import { Row, Col } from "react-bootstrap";

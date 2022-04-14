@@ -3,11 +3,12 @@ import classes from "./FooterNavigation.module.css";
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import AuthContext from "../../store/auth-context";
-import { Link } from "react-router-dom";
 import List from "../UI/List";
 
 function FooterNavigation() {
   const authCtx = useContext(AuthContext);
+  const linkedin = "https://www.linkedin.com/in/abinmuds/";
+  const github = "https://github.com/AbinMuds";
 
   const isLoggedIn = authCtx.isLoggedIn;
   return (
@@ -28,10 +29,10 @@ function FooterNavigation() {
           </List>
         )}
         <List>
-          <Link>Linkedin</Link>
+          <a href={linkedin}>Linkedin</a>
         </List>
         <List>
-          <Link>Github</Link>
+          <a href={github}>Github</a>
         </List>
       </ul>
       <div className={classes.h5}>
