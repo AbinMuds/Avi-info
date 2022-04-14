@@ -2,6 +2,7 @@ import "./MainNavigation.css";
 import { useContext, useState, Fragment } from "react";
 import AuthContext from "../../store/auth-context";
 import { Link } from "react-router-dom";
+import List from "../UI/List";
 
 function MainNavigation() {
   const [click, setClick] = useState(false);
@@ -29,7 +30,7 @@ function MainNavigation() {
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
+          <List>
             <Link
               to="/Avi-info"
               className="nav-links"
@@ -37,8 +38,8 @@ function MainNavigation() {
             >
               About
             </Link>
-          </li>
-          <li className="nav-item">
+          </List>
+          <List className="nav-item">
             <Link
               to="/projects"
               className="nav-links"
@@ -46,14 +47,14 @@ function MainNavigation() {
             >
               Projects
             </Link>
-          </li>
-          <li className="nav-item">
+          </List>
+          <List className="nav-item">
             <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
               Contact
             </Link>
-          </li>
+          </List>
           {!isLoggedIn && (
-            <li className="nav-item">
+            <List className="nav-item">
               <Link
                 to="/auth"
                 className="nav-links-mobile"
@@ -61,28 +62,28 @@ function MainNavigation() {
               >
                 Sign Up
               </Link>
-            </li>
+            </List>
           )}
           {isLoggedIn && (
-            <li className="nav-item">
+            <List className="nav-item">
               <Link className="nav-links-mobile" onClick={logoutHandler}>
                 Logout
               </Link>
-            </li>
+            </List>
           )}
           {isLoggedIn && (
-            <li className="nav-item">
+            <List className="nav-item">
               <button onClick={logoutHandler} className="btn-links">
                 Logout
               </button>
-            </li>
+            </List>
           )}
           {!isLoggedIn && (
-            <li className="nav-item">
+            <List className="nav-item">
               <Link to="auth">
                 <button className="btn-links">Sign Up</button>
               </Link>
-            </li>
+            </List>
           )}
         </ul>
       </nav>

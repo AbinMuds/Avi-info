@@ -2,11 +2,23 @@
   margin: 1rem 0;
   padding: 1rem;
   display: flex;
+  height: 45%;
   justify-content: space-between;
   align-items: flex-end;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 13px 25px rgb(0 0 0 / 21%);
   border-radius: 6px;
   background-color: #c2e7f0;
+}
+
+.listItem {
+  width: 50%;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 920px) {
+  .listItem {
+    width: 100%;
+  }
 }
 
 .item:last-of-type {

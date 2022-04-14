@@ -32,7 +32,6 @@ function App() {
           </Route>
           <Route path="/Avi-info" exact>
             <About />
-            <AllProjects />
           </Route>
           <Route path="/projects" exact>
             <AllProjects />

@@ -2,6 +2,7 @@ import { useRef, useState, Fragment } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Prompt } from "react-router-dom";
 import Card from "../UI/Card";
+import List from "../UI/List";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import classes from "./NewContact.module.css";
 
@@ -43,57 +44,35 @@ function NewContact(props) {
         }
       />
       <Card>
-        <Row>
-          <Col md={5}>
-            <form
-              onFocus={formFocusedHandler}
-              className={classes.form}
-              onSubmit={submitFormHandler}
-            >
-              {props.isLoading && (
-                <div className={classes.loading}>
-                  <LoadingSpinner />
-                </div>
-              )}
+        <form
+          onFocus={formFocusedHandler}
+          className={classes.form}
+          onSubmit={submitFormHandler}
+        >
+          {props.isLoading && (
+            <div className={classes.loading}>
+              <LoadingSpinner />
+            </div>
+          )}
 
-              <div className={classes.control}>
-                <label htmlFor="name">Full Name</label>
-                <input type="text" id="name" ref={nameInputRef} />
-              </div>
-              <div className={classes.control}>
-                <label htmlFor="message">Message</label>
-                <textarea id="text" rows="5" ref={messageInputRef}></textarea>
-              </div>
-              <div className={classes.control}>
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" ref={emailInputRef} />
-              </div>
-              <div className={classes.actions}>
-                <button onClick={finishEnteringHandler} className="btn">
-                  Contact
-                </button>
-              </div>
-            </form>
-          </Col>
-          <Col md={7}>
-            <Card>
-              <h4>Phone : </h4>
-              <h6>+172-0579-3368</h6>
-            </Card>
-            <Card>
-              <h4>Email: </h4>
-              <h6>abinashmudbhari@gmail.com</h6>
-            </Card>
-            <Card>
-              <h4>Linkedin:</h4>
-              <h6>https://www.linkedin.com/in/abinmuds/</h6>
-            </Card>
-            <Card>
-              <h4>Github:</h4>
-              <h6>https://github.com/AbinMuds</h6>
-            </Card>
-          </Col>
-        </Row>
+          <div className={classes.control}>
+            <label htmlFor="name">Full Name</label>
+            <input type="text" id="name" ref={nameInputRef} />
+          </div>
+          <div className={classes.control}>
+            <label htmlFor="message">Message</label>
+            <textarea id="text" rows="5" ref={messageInputRef}></textarea>
+          </div>
+          <div className={classes.control}>
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" ref={emailInputRef} />
+          </div>
+          <div className={classes.actions}>
+            <button onClick={finishEnteringHandler} className="btn">
+              Contact
+            </button>
+          </div>
+        </form>
       </Card>
     </Fragment>
   );

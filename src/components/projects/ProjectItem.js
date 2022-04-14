@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Card from "../UI/Card";
 import classes from "./ProjectItem.module.css";
 
 function ProjectItem(props) {
+  const [showAnimation, setShowAnimation] = useState(false);
   return (
-    <li>
+    <li
+      onMouseEnter={() => {
+        setShowAnimation(true);
+      }}
+      onMouseLeave={() => {
+        setShowAnimation(false);
+      }}
+      class={
+        showAnimation
+          ? `animate__animated animate__pulse ${classes.listItem}`
+          : `${classes.listItem}`
+      }
+    >
       <Card className={classes.item}>
         <div className={classes.image}>
           <Link to={`/projects/${props.id}`}>

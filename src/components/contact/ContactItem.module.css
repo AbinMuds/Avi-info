@@ -18,3 +18,14 @@
   font-size: 1.25rem;
   color: #2c292b;
 }
+
+.listItem {
+  width: 50%;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 920px) {
+  .listItem {
+    width: 100%;
+  }
+}
