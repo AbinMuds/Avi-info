@@ -1,8 +1,6 @@
 import { useRef, useState, Fragment } from "react";
-import { Col, Row } from "react-bootstrap";
 import { Prompt } from "react-router-dom";
 import Card from "../UI/Card";
-import List from "../UI/List";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import classes from "./NewContact.module.css";
 

@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import AuthContext from "../../store/auth-context";
 import List from "../UI/List";
+import { Link } from "react-router-dom";
 
 function FooterNavigation() {
   const authCtx = useContext(AuthContext);
@@ -29,10 +30,20 @@ function FooterNavigation() {
           </List>
         )}
         <List>
-          <a href={linkedin}>Linkedin</a>
+          <a href={github}>
+            <i class="fab fa-github"></i>
+          </a>
         </List>
         <List>
-          <a href={github}>Github</a>
+          <a href={linkedin}>
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </List>
+        <List>
+          <Link to="/contact/new">Contact</Link>
+        </List>
+        <List>
+          <Link to="/projects">Projects</Link>
         </List>
       </ul>
       <div className={classes.h5}>
