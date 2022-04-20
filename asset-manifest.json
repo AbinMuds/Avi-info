@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Avi-info/static/css/main.ed30fcc0.css",
-    "main.js": "/Avi-info/static/js/main.814c79d6.js",
+    "main.css": "/Avi-info/static/css/main.30383fec.css",
+    "main.js": "/Avi-info/static/js/main.29e53b2b.js",
     "static/css/529.9c0e92de.chunk.css": "/Avi-info/static/css/529.9c0e92de.chunk.css",
     "static/js/529.cf4843fd.chunk.js": "/Avi-info/static/js/529.cf4843fd.chunk.js",
     "static/css/513.633f0241.chunk.css": "/Avi-info/static/css/513.633f0241.chunk.css",
@@ -15,8 +15,8 @@
     "static/js/241.3b1d2b98.chunk.js": "/Avi-info/static/js/241.3b1d2b98.chunk.js",
     "static/media/MyPic.jpg": "/Avi-info/static/media/MyPic.87dc866071b475ad04be.jpg",
     "index.html": "/Avi-info/index.html",
-    "main.ed30fcc0.css.map": "/Avi-info/static/css/main.ed30fcc0.css.map",
-    "main.814c79d6.js.map": "/Avi-info/static/js/main.814c79d6.js.map",
+    "main.30383fec.css.map": "/Avi-info/static/css/main.30383fec.css.map",
+    "main.29e53b2b.js.map": "/Avi-info/static/js/main.29e53b2b.js.map",
     "529.9c0e92de.chunk.css.map": "/Avi-info/static/css/529.9c0e92de.chunk.css.map",
     "529.cf4843fd.chunk.js.map": "/Avi-info/static/js/529.cf4843fd.chunk.js.map",
     "513.633f0241.chunk.css.map": "/Avi-info/static/css/513.633f0241.chunk.css.map",
@@ -30,7 +30,7 @@
     "241.3b1d2b98.chunk.js.map": "/Avi-info/static/js/241.3b1d2b98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed30fcc0.css",
-    "static/js/main.814c79d6.js"
+    "static/css/main.30383fec.css",
+    "static/js/main.29e53b2b.js"
   ]
 }
