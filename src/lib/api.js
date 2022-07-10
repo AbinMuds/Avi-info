@@ -1,9 +1,8 @@
 const FIREBASE_DOMAIN = process.env.REACT_APP_FIREBASE_DOMAIN;
-
 export async function getAllProjects() {
   const response = await fetch(`${FIREBASE_DOMAIN}/projects.json`);
   const data = await response.json();
-
+  console.log(data);
   if (!response.ok) {
     throw new Error(data.message || "Could not fetch projects");
   }
